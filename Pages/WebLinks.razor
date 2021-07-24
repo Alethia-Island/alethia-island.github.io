@@ -1,6 +1,6 @@
 ﻿@page "/links"
 
-<Meta property="og:title" content="Alethia Island - Links" />
+<Title Value="Alethia Island - Links"></Title>
 
 @md
 
@@ -12,7 +12,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        md = new(await Http.GetMarkdownAsHtml("https://raw.githubusercontent.com/Alethia-Island/WebLinks/gh-pages/links.md"));
+        md = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/links.md"));
         await base.OnInitializedAsync();
     }
 }

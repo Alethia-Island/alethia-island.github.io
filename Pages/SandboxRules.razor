@@ -1,6 +1,6 @@
 ﻿@page "/sandbox/rules"
 
-<Meta property="og:title" content="Alethia Island - Sandbox Rules" />
+<Title Value="Alethia Island - Sandbox Rules"></Title>
 
 @md
 
@@ -12,7 +12,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        md = new(await Http.GetMarkdownAsHtml("https://raw.githubusercontent.com/Alethia-Island/WebLinks/gh-pages/sandbox_rules.md"));
+        md = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/sandbox_rules.md"));
         await base.OnInitializedAsync();
     }
 }
