@@ -9,10 +9,6 @@
       "url": ".gitignore"
     },
     {
-      "hash": "sha256-E3hs\/X\/gv1nWurkJaxkrqDXLcRb3NCGVd\/0bw3XfwYc=",
-      "url": "404.html"
-    },
-    {
       "hash": "sha256-1KwU+JWHwE7sdGl9LUmorKVAnXXGHLoUeUo9V3RZOdg=",
       "url": "css\/app.css"
     },
@@ -6993,7 +6989,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-teLH8jd1NLLWd3aDQDeTuzoiWb3QL\/kn6Fc6eU1QQ2A=",
+      "hash": "sha256-Jg\/Lgb0p0DFIf+fCNLBoHLS+\/NyQZuV4tH1rGeiAWBE=",
       "url": "_framework\/AlethiaIsland.dll"
     },
     {
@@ -7077,7 +7073,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-vNx57dDBsv7eCscSwGg\/XAUDG0iJBMAezlnZCta80sA=",
+      "hash": "sha256-09EJQru1dBmifVWQ2qZ9bGdWAD9IRjMGiZVAXMnTIMQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -7085,5 +7081,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "YVI2\/eWm"
+  "version": "+tMuLwGM"
 };
