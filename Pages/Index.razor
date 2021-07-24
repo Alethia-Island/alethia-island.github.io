@@ -1,12 +1,10 @@
 ﻿@page "/"
 
+<Meta property="og:title" content="Alethia Island - Home" />
+
 <h2>Welcome to Alethia Island.</h2>
 
-@md
-
 @code {
-    MarkupString md = new();
-
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
