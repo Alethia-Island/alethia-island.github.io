@@ -5,6 +5,10 @@
       "url": ".gitattributes"
     },
     {
+      "hash": "sha256-Dk5bZaTOLImJMfh83FYvYnr+XhnBCKb4pNoD+RfkRuQ=",
+      "url": ".gitignore"
+    },
+    {
       "hash": "sha256-E3hs\/X\/gv1nWurkJaxkrqDXLcRb3NCGVd\/0bw3XfwYc=",
       "url": "404.html"
     },
@@ -7081,5 +7085,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "hkuy9YcC"
+  "version": "HkI23l7J"
 };
