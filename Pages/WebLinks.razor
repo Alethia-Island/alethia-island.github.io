@@ -10,7 +10,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        md = new(await Http.GetMarkdownAsHtml("https://raw.githubusercontent.com/Alethia-Island/WebLinks/gh-pages/index.md"));
+        md = new(await Http.GetMarkdownAsHtml("https://raw.githubusercontent.com/Alethia-Island/WebLinks/gh-pages/links.md"));
         await base.OnInitializedAsync();
     }
 }
