@@ -1,0 +1,16 @@
+﻿@page "/general"
+
+@md
+
+@code {
+    [Inject]
+    HttpClient Http { get; set; }
+
+    MarkupString md = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        md = new(await Http.GetMarkdownAsHtml("https://raw.githubusercontent.com/Alethia-Island/WebLinks/gh-pages/general_information.md"));
+        await base.OnInitializedAsync();
+    }
+}

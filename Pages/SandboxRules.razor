@@ -1,0 +1,16 @@
+﻿@page "/sandbox/rules"
+
+@md
+
+@code {
+    [Inject]
+    HttpClient Http { get; set; }
+
+    MarkupString md = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        md = new(await Http.GetMarkdownAsHtml("https://raw.githubusercontent.com/Alethia-Island/WebLinks/gh-pages/sandbox_rules.md"));
+        await base.OnInitializedAsync();
+    }
+}

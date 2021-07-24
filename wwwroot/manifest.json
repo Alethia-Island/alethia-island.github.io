@@ -1,0 +1,16 @@
+{
+  "name": "Alethia Island",
+  "short_name": "Alethia",
+  "description": "Alethia Island in Second Life",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#095994",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
