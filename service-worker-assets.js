@@ -6829,8 +6829,12 @@
       "url": "css\/fontawesome\/webfonts\/fa-solid-900.woff2"
     },
     {
-      "hash": "sha256-yWhAVrfrrCXsghDpYUBzSc6aFneQeuO\/jpPN65vc\/fg=",
+      "hash": "sha256-FTGfvjM\/ofz8xO2J9hZsNC6BCyRoAToA8N5bBR83BA0=",
       "url": "css\/themes\/default.css"
+    },
+    {
+      "hash": "sha256-b550kWoQ2fJh+pWCz4WvhjzidmYWVBNQr3YEcAU2BtE=",
+      "url": "css\/themes\/settings.css"
     },
     {
       "hash": "sha256-UlkqkB5o7zUPM8BmYPMUpVFBFXwGlLQbLyfgZtzK1D8=",
@@ -6997,7 +7001,7 @@
       "url": "_framework\/System.ServiceModel.Syndication.dll"
     },
     {
-      "hash": "sha256-4ky1kMvADHe+XrSqZulZGTs5wub\/AzYVfjNmR8DxI6M=",
+      "hash": "sha256-Kt6dzBIVGaGPcjd6w3XDxyaKsfI3vWUt5QMLUIeiraw=",
       "url": "_framework\/AlethiaIsland.dll"
     },
     {
@@ -7129,7 +7133,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-yt10\/1EKxXwuNcuDtIabKyCFzHADPKD2qGBoO0T3epM=",
+      "hash": "sha256-L\/+yRYOWtqouBnEATzJ9ify+SmX\/R5OppBHTL0UMWgA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -7137,5 +7141,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "knk8TxND"
+  "version": "fwcuBYz+"
 };
