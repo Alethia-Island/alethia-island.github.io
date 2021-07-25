@@ -2,17 +2,4 @@
 
 <Title Value="Alethia Island - General Information"></Title>
 
-@md
-
-@code {
-    [Inject]
-    HttpClient Http { get; set; }
-
-    MarkupString md = new();
-
-    protected override async Task OnInitializedAsync()
-    {
-        md = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/general_information.md"));
-        await base.OnInitializedAsync();
-    }
-}
+@Output
