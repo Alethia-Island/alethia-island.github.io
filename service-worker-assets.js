@@ -7001,7 +7001,7 @@
       "url": "_framework\/System.ServiceModel.Syndication.dll"
     },
     {
-      "hash": "sha256-Kt6dzBIVGaGPcjd6w3XDxyaKsfI3vWUt5QMLUIeiraw=",
+      "hash": "sha256-ZPumak81QeVcxBrlScXMjjXXzi6tCDnoIF0cvAi7ceY=",
       "url": "_framework\/AlethiaIsland.dll"
     },
     {
@@ -7133,7 +7133,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-L\/+yRYOWtqouBnEATzJ9ify+SmX\/R5OppBHTL0UMWgA=",
+      "hash": "sha256-gG9G0IoiQtLCkG0trPi\/8kwVLqfIZy3Dd14sd5WKeEc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -7141,5 +7141,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "fwcuBYz+"
+  "version": "dPDwFY3V"
 };
