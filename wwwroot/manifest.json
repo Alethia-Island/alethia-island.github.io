@@ -8,7 +8,7 @@
   "theme_color": "#095994",
   "icons": [
     {
-      "src": "icon-512.png",
+      "src": "https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/icons/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
