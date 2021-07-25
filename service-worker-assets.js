@@ -9,7 +9,7 @@
       "url": ".gitignore"
     },
     {
-      "hash": "sha256-1KwU+JWHwE7sdGl9LUmorKVAnXXGHLoUeUo9V3RZOdg=",
+      "hash": "sha256-6uXobruztIYaGGAdivkttXys5omM+BtycfbzwmJL00Q=",
       "url": "css\/app.css"
     },
     {
@@ -6997,7 +6997,7 @@
       "url": "_framework\/System.ServiceModel.Syndication.dll"
     },
     {
-      "hash": "sha256-J6fXLDpMgmL0axHbVfzoWlMR4n424vqKbMKTJ9Xmsys=",
+      "hash": "sha256-4ky1kMvADHe+XrSqZulZGTs5wub\/AzYVfjNmR8DxI6M=",
       "url": "_framework\/AlethiaIsland.dll"
     },
     {
@@ -7129,7 +7129,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-LPYZTlBo4vHvhlVMFjBK9\/HqybMX1IK6JgIhO+L0xmw=",
+      "hash": "sha256-yt10\/1EKxXwuNcuDtIabKyCFzHADPKD2qGBoO0T3epM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -7137,5 +7137,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "IYcO685c"
+  "version": "EeF9jMPA"
 };
