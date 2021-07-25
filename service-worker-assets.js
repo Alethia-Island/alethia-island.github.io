@@ -9,7 +9,7 @@
       "url": ".gitignore"
     },
     {
-      "hash": "sha256-K+Ol4Th+Sz2mldnXdnru1ZjwLGRAWhpNZy6YCx\/SpkA=",
+      "hash": "sha256-pXwHeupnXqxlpdetXRlPitvWA2flPfJWD1htpKkH0D8=",
       "url": "css\/app.css"
     },
     {
@@ -7137,5 +7137,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "w5A58ajH"
+  "version": "knk8TxND"
 };
