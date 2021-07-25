@@ -173,12 +173,18 @@ img {
 }
 
 @media (max-width: 360px) {
+    h2 {
+        font-size: 1.6rem;
+    }
     img {
         max-width: 200px;
     }
 }
 
 @media (max-width: 320px) {
+    h2 {
+        font-size: 1.5rem;
+    }
     img {
         max-width: 200px;
     }
