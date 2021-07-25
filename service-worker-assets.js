@@ -9,7 +9,7 @@
       "url": ".gitignore"
     },
     {
-      "hash": "sha256-6uXobruztIYaGGAdivkttXys5omM+BtycfbzwmJL00Q=",
+      "hash": "sha256-K+Ol4Th+Sz2mldnXdnru1ZjwLGRAWhpNZy6YCx\/SpkA=",
       "url": "css\/app.css"
     },
     {
@@ -6829,7 +6829,7 @@
       "url": "css\/fontawesome\/webfonts\/fa-solid-900.woff2"
     },
     {
-      "hash": "sha256-a8TiVn5EVGuRzhi1n73vE\/qu1dcvt92Wt6a5OBN8674=",
+      "hash": "sha256-yWhAVrfrrCXsghDpYUBzSc6aFneQeuO\/jpPN65vc\/fg=",
       "url": "css\/themes\/default.css"
     },
     {
@@ -7137,5 +7137,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "EeF9jMPA"
+  "version": "w5A58ajH"
 };

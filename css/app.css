@@ -136,8 +136,56 @@ img {
     max-width: 700px;
 }
 
+@media (max-width: 768px) {
+    img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 720px) {
+    img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 653px) {
+    img {
+        max-width: 400px;
+    }
+}
+
 @media (max-width: 640px) {
     img {
         max-width: 400px;
+    }
+}
+
+@media (max-width: 414px) {
+    img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 360px) {
+    img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 280px) {
+    h2 {
+        font-size: 1.4rem;
     }
 }

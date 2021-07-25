@@ -1,3 +1,4 @@
 ﻿#app {
     background-color: #fff;
+    overflow-y: scroll;
 }
