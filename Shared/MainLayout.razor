@@ -1,7 +1,9 @@
 ﻿@inherits LayoutComponentBase
 
-<Link href="css/themes/default.css" rel="stylesheet" />
-<Title Value="Alethia Island"></Title>
+<HeadContent>
+    <link href="css/themes/default.css" rel="stylesheet" />
+</HeadContent>
+<PageTitle>Alethia Island</PageTitle>
 
 <div class="page">
     <div class="sidebar">
@@ -9,9 +11,6 @@
     </div>
 
     <div class="main">
-        @*<div class="top-row px-4">
-
-        </div>*@
         <div class="content px-4">
             @Body
         </div>
