@@ -29,7 +29,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-YPXO432aKDnS0cbz4ZinmrmeV7FHc+j0LxLQLgQZ31w=",
+      "hash": "sha256-FbFiFTZNSsIz5SQUG59DV1WdxQoKK3MIvSkoD9XmYbw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -37,7 +37,7 @@
       "url": "_framework\/dotnet.6.0.0-rc.1.21451.13.js"
     },
     {
-      "hash": "sha256-jwCRJQkHvkFOII0rfJKTtNSe+EC1RID4cFNA7oYb1bM=",
+      "hash": "sha256-bvaPAgS6jRXTIvout85h\/oczu7hf6joyr5h1pi1TcIQ=",
       "url": "_framework\/AlethiaIsland.dll"
     },
     {
@@ -7101,5 +7101,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "U61wigAw"
+  "version": "\/Oo2k9OQ"
 };
