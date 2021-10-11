@@ -29,7 +29,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-In+Rn04NJ8vVXu9+J\/QVwORshp3\/gHf2+r0bpN71Zdw=",
+      "hash": "sha256-BVlig0KtHGg1H4RQAtLxJ\/\/GhSOaur3zCA5dpf6G7n8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -37,7 +37,7 @@
       "url": "_framework\/dotnet.6.0.0-rc.1.21451.13.js"
     },
     {
-      "hash": "sha256-EkyAH\/3SDkwgZ584iWzG38B8FONsy\/uq5Q80g3Aui\/8=",
+      "hash": "sha256-U2uA8OcYz5UFiyxOvmuP0B38Hw7ydOSaSlpPwNQeFlM=",
       "url": "_framework\/AlethiaIsland.dll"
     },
     {
@@ -201,7 +201,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-Qyuo+iGU4BsQGQxpVx3QbKK3ooiT24bnpfNNQc4WNu0=",
+      "hash": "sha256-+F9Z1ilhTNRfK5wiVA8r7kau5eyY+rr+Bz3u\/gAyaAY=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -245,7 +245,7 @@
       "url": "_framework\/System.Text.RegularExpressions.dll"
     },
     {
-      "hash": "sha256-dph9yGflHL3Bfkl0F3KbVankUThvsJkgUHKvhH47dds=",
+      "hash": "sha256-iCy9F5OIJLlMeoA\/F8LeCZqkc5fWRwRHO3pHvVT3GoA=",
       "url": "AlethiaIsland.styles.css"
     },
     {
@@ -7097,9 +7097,9 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-Hd6zd4OP3nYIFhd+F3NlKJp03HeskcXLo3DkyTL1NkE=",
+      "hash": "sha256-fz+T0Na7qNCZy\/P6VoHwCL9RISClR\/2vijOz5D5WkGY=",
       "url": "manifest.json"
     }
   ],
-  "version": "yZUgNODD"
+  "version": "m9ftN0+A"
 };

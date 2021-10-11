@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "AlethiaIsland.dll": "sha256-EkyAH\/3SDkwgZ584iWzG38B8FONsy\/uq5Q80g3Aui\/8=",
+      "AlethiaIsland.dll": "sha256-U2uA8OcYz5UFiyxOvmuP0B38Hw7ydOSaSlpPwNQeFlM=",
       "CommonMark.dll": "sha256-Le1UPAI0W+wPISH+M5MehPMDO1sVvsAj2tKjiPaC\/Ok=",
       "Microsoft.AspNetCore.Components.dll": "sha256-EthfAGbzFjj4nZ\/C3\/4C7ujFOC6aS4\/4ggrSKG\/Rxzw=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-EKTKhzenk2LPR3D\/tpWMLIEPKp+k58FdiEdeJkVGxLc=",
@@ -48,7 +48,7 @@
       "System.Private.Xml.Linq.dll": "sha256-vJ\/oQ\/Ko4J\/7Ldrs9D95RfVG09XQ6VnHAREmdSu+oE4=",
       "System.Reflection.dll": "sha256-iSXIEFeZUZWCBWwWKH4rVknVVkd9F4V337dmSLUzCE4=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-tSNaVGPQML0iJI0mqxUKZWUDlTPdOHPyHirj7F4qsJc=",
-      "System.Runtime.dll": "sha256-Qyuo+iGU4BsQGQxpVx3QbKK3ooiT24bnpfNNQc4WNu0=",
+      "System.Runtime.dll": "sha256-+F9Z1ilhTNRfK5wiVA8r7kau5eyY+rr+Bz3u\/gAyaAY=",
       "System.Runtime.Extensions.dll": "sha256-kYyFB1o63UzYm1GnoffFkqZ2LytPo+o1s2qKkd\/kgoU=",
       "System.Runtime.Serialization.Formatters.dll": "sha256-3VitMdeQBVAF+YlytTAphkexgN8IyTnwyfvkXzyAw6c=",
       "System.Runtime.Serialization.Primitives.dll": "sha256-6jwWUyzyvsYzNmrNj3M7VHZV7h37C2xoxBb6BsDo784=",
