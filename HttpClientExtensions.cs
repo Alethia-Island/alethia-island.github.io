@@ -4,22 +4,24 @@ namespace AlethiaIsland
 {
     public static class HttpClientExtensions
     {
-        public static async Task<string> GetMarkdownAsHtml(this HttpClient client, string uri) => await GetMarkdownAsHtml(client, new Uri(uri));
-        public static async Task<string> GetMarkdownAsHtml(this HttpClient client, Uri uri)
+        public static async Task<string> GetMarkdownAsHtml(this HttpClient? client, string? uri) => await GetMarkdownAsHtml(client, new Uri(uri ?? string.Empty));
+        public static async Task<string> GetMarkdownAsHtml(this HttpClient? client, Uri? uri)
         {
-            var resp = await client.GetAsync(uri);
-            if (resp.IsSuccessStatusCode is true)
+            if (client != null)
             {
-                try
+                var resp = await client.GetAsync(uri);
+                if (resp.IsSuccessStatusCode is true)
                 {
-                    return new(CommonMarkConverter.Convert(await resp.Content.ReadAsStringAsync()));
-                }
-                catch (Exception)
-                {
-
+                    try
+                    {
+                        return new(CommonMarkConverter.Convert(await resp.Content.ReadAsStringAsync()));
+                    }
+                    catch (Exception)
+                    {
+                        throw new NullReferenceException();
+                    }
                 }
             }
-
             return string.Empty;
         }
     }

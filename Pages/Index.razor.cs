@@ -5,7 +5,7 @@ namespace AlethiaIsland.Pages
     public partial class Index
     {
         [Inject]
-        private HttpClient Http { get; set; }
+        private HttpClient? Http { get; set; }
 
         private MarkupString Output = new();
 

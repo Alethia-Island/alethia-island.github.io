@@ -5,7 +5,7 @@ namespace AlethiaIsland.Pages
     public partial class WebLinks
     {
         [Inject]
-        private HttpClient Http { get; set; }
+        private HttpClient? Http { get; set; }
 
         private MarkupString Output = new();
 

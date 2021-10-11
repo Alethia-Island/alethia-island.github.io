@@ -1,6 +1,7 @@
 {
+  "version": "1.0.0.0",
   "name": "Alethia Island",
-  "short_name": "Alethia",
+  "short_name": "Alethia Island",
   "description": "Alethia Island in Second Life",
   "start_url": "./",
   "display": "standalone",
@@ -15,5 +16,5 @@
   ],
   "background": {
     "service_worker": "service-worker.js"
-  }  
+  }
 }
