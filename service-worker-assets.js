@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-xBYYKQN7\/tTfECXBbsbbWL\/DASZ0N78i0qroeaBcMck=",
+      "hash": "sha256-1W0B5GLoOFsGApwq3IlwSrP\/XyRqHGFfq42rsIzUDo0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-I3RnVJt4AnOjGvI2qEhrxVshUlrfuy8\/StRd\/q5i5BY=",
+      "hash": "sha256-3vbAsGauDBQJQrBpgmH+webOLEQFLqvO1FHHZap67A8=",
       "url": "_framework\/AlethiaIsland.dll"
     },
     {
@@ -7101,5 +7101,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "JJACHdcb"
+  "version": "QOBm0MAG"
 };
