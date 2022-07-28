@@ -1,17 +1,21 @@
 ﻿@inherits LayoutComponentBase
 
-<HeadContent>
-    <link href="css/themes/default.css" rel="stylesheet" />
-</HeadContent>
+<div class="bg-img" />
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<div class="navbar ps-2 pe-2 w-100">
+    <div class="hdr-l hdr-f">
+        <span><img class="rounded-circle shadow" src="https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/icons/icon-512.png" style="height: 24px; width: 24px;"> Alethia Island</span>
     </div>
-
-    <main>
-        <article class="content px-4 pt-0 pb-5">
-            @Body
-        </article>
-    </main>
+    <div class="hdr-r hdr-f">
+        <div class="float-end pe-2">
+            <NavLink href="" Match="NavLinkMatch.All">Home</NavLink>
+            <NavLink href="general">General</NavLink>
+            <NavLink href="sandbox/rules" Match="NavLinkMatch.Prefix">Rules</NavLink>
+            <NavLink href="links">Links</NavLink>
+            <NavLink href="contact">Contact Us</NavLink>
+        </div>
+    </div>
 </div>
+<p class="container p-4 mt-5 shadow">
+    @Body
+</p>
