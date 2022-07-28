@@ -8,8 +8,9 @@ self.addEventListener('fetch', event => event.respondWith(onFetch(event)));
 
 const cacheNamePrefix = 'app-cache-';
 const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}`;
-const offlineAssetsInclude = [/\.dll$/, /\.pdb$/, /\.wasm/, /\.html/, /\.js$/, /\.json$/, /\.css$/, /\.woff$/, /\.png$/, /\.jpe?g$/, /\.gif$/, /\.ico$/, /\.blat$/, /\.dat$/];
-const offlineAssetsExclude = [/^service-worker\.js$/];
+
+const github_images = 'https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/';
+const github_pages = 'https://raw.githubusercontent.com/Alethia-Island/WebLinks/main/';
 
 const filesToCache = [
     `${github_images}backgrounds/river_and_stones.png`,
@@ -23,25 +24,14 @@ const filesToCache = [
     `${github_pages}index.md`,
     `${github_pages}links.md`,
     `${github_pages}privacy_areas.md`,
-    `${github_pages}sandbox_rules.md`,
+    `${github_pages}sandbox_rules.md`
 ];
 
 async function onInstall(event) {
-    console.info('Service worker: Install');
-
-    // Fetch and cache all matching items from the assets manifest
-    //const assetsRequests = self.assetsManifest.assets
-    //    .filter(asset => offlineAssetsInclude.some(pattern => pattern.test(asset.url)))
-    //    .filter(asset => !offlineAssetsExclude.some(pattern => pattern.test(asset.url)))
-    //    .map(asset => new Request(asset.url, { integrity: asset.hash }));
-    //await caches.open(cacheName).then(cache => cache.addAll(assetsRequests));
     await caches.open(cacheName).then(cache => cache.addAll(filesToCache));
 }
 
 async function onActivate(event) {
-    console.info('Service worker: Activate');
-
-    // Delete unused caches
     const cacheKeys = await caches.keys();
     await Promise.all(cacheKeys
         .filter(key => key.startsWith(cacheNamePrefix) && key !== cacheName)
@@ -51,8 +41,6 @@ async function onActivate(event) {
 async function onFetch(event) {
     let cachedResponse = null;
     if (event.request.method === 'GET') {
-        // For all navigation requests, try to serve index.html from cache
-        // If you need some URLs to be server-rendered, edit the following check to exclude those URLs
         const shouldServeIndexHtml = event.request.mode === 'navigate';
 
         const request = shouldServeIndexHtml ? 'index.html' : event.request;
