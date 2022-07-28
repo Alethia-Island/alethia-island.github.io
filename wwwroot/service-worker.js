@@ -6,7 +6,6 @@ self.addEventListener('fetch', () => { });
 const github_images = 'https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/';
 const github_pages = 'https://raw.githubusercontent.com/Alethia-Island/WebLinks/main/';
 
-
 const filesToCache = [
     `${github_images}backgrounds/river_and_stones.png`,
     `${github_images}help-point-sign.jpg`,
