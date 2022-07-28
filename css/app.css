@@ -1,7 +1,11 @@
 ﻿@import url('fontawesome/css/all.min.css');
+@import url('scrollbar-dark.min.css');
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 1px .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    overflow: hidden;
 }
 
 * {
@@ -63,14 +67,31 @@ button.focus,
     border-radius: 2px;
 }
 
-a, .btn-link {
-    color: #0366d6;
+a, 
+.btn-link, 
+nav-link {
+    color: #ffd800;
+    text-decoration: none;
 }
 
+    a.active,
+    .btn-link.active,
+    nav-link.active {
+        color: #e1c840;
+        text-decoration: underline;
+    }
+
+    a:hover,
+    .btn-link:hover,
+    nav-link:hover {
+        color: #ceae00;
+    }
+
 #app {
-    background-color: #095994;
+    /*background-color: #095994;*/
     height: 100vh;
     width: 100%;
+    overflow-y: scroll;
 }
 
 .btn-primary {

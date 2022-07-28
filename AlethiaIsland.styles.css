@@ -1,73 +1,100 @@
 /* /Shared/MainLayout.razor.rz.scp.css */
-.page[b-3ianj68stp] {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.bg-img[b-3ianj68stp] {
+    background-image: url("https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/backgrounds/river_and_stones.png");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.navbar[b-3ianj68stp] {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    line-height: 25px;
+    width: 100%;
+}
+
+    [b-3ianj68stp].navbar a {
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+.container[b-3ianj68stp] {
+    background-color: rgb(0, 0, 0, 0.25);
+    border-radius: 4px;
+    max-width: 50em;
+    z-index: 10;
+    width: 100%;
+}
+
+.hdr-l[b-3ianj68stp] {
+    width: 25%;
+}
+
+.hdr-r[b-3ianj68stp] {
+    width: 75%;
+}
+
+.hdr-f[b-3ianj68stp] {
+    font-size: 18px;
 }
 
 main[b-3ianj68stp] {
     flex: 1;
 }
 
-.sidebar[b-3ianj68stp] {
-    background-color: #095994;
-}
-
-.top-row[b-3ianj68stp] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-    .top-row[b-3ianj68stp]  a, .top-row .btn-link[b-3ianj68stp] {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
-
-    .top-row a:first-child[b-3ianj68stp] {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-3ianj68stp] {
-        display: none;
+    .navbar[b-3ianj68stp] {
+        background-color: rgb(0, 0, 0, 0.5);
     }
-
-    .top-row.auth[b-3ianj68stp] {
-        justify-content: space-between;
+    .hdr-f[b-3ianj68stp] {
+        font-size: 15px;
     }
+    main[b-3ianj68stp] { 
+        padding-top: 5rem;
+    }
+}
 
-    .top-row a[b-3ianj68stp], .top-row .btn-link[b-3ianj68stp] {
-        margin-left: 0;
+@media (max-width: 400px) {
+    .hdr-f[b-3ianj68stp] {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 443px) {
+    .hdr-f[b-3ianj68stp] {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hdr-l img[b-3ianj68stp] {
+        max-height: 16px;
+        max-width: 16px;
+    }
+    .hdr-f[b-3ianj68stp] {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 280px) {
+    .hdr-l img[b-3ianj68stp] {
+        max-height: 12px;
+        max-width: 12px;
+    }
+    .hdr-f[b-3ianj68stp] {
+        font-size: 6px;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-3ianj68stp] {
-        flex-direction: row;
-    }
 
-    .sidebar[b-3ianj68stp] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-3ianj68stp] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .main > div[b-3ianj68stp] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
 }
 /* /Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-kyxd6ghqkc] {

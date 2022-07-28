@@ -8,25 +8,35 @@ self.addEventListener('fetch', event => event.respondWith(onFetch(event)));
 
 const cacheNamePrefix = 'offline-cache-';
 const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}`;
-const offlineAssetsInclude = [ /\.dll$/, /\.pdb$/, /\.wasm/, /\.html/, /\.js$/, /\.json$/, /\.css$/, /\.woff$/, /\.png$/, /\.jpe?g$/, /\.gif$/, /\.ico$/, /\.blat$/, /\.dat$/ ];
-const offlineAssetsExclude = [ /^service-worker\.js$/ ];
+const offlineAssetsInclude = [/\.dll$/, /\.pdb$/, /\.wasm/, /\.html/, /\.js$/, /\.json$/, /\.css$/, /\.woff$/, /\.png$/, /\.jpe?g$/, /\.gif$/, /\.ico$/, /\.blat$/, /\.dat$/];
+const offlineAssetsExclude = [/^service-worker\.js$/];
 
 const github_images = 'https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/';
 const github_pages = 'https://raw.githubusercontent.com/Alethia-Island/WebLinks/main/';
+const sl_profile_pics = 'https://my-secondlife-agni.akamaized.net/users/';
+const sl_profile_pic_thumbnail = 'thumb_sl_image.png';
 
 const filesToCache = [
-  `${github_images}backgrounds/river_and_stones.png`,
-  `${github_images}help-point-sign.jpg`,
-  `${github_images}unpacking-areas.jpg`,
-  `${github_images}icons/icon-512.png`,
+    `${github_images}backgrounds/river_and_stones.png`,
+    `${github_images}help-point-sign.jpg`,
+    `${github_images}unpacking-areas.jpg`,
+    `${github_images}icons/icon-512.png`,
 
-  `${github_pages}contact_us.md`,
-  `${github_pages}general_information.md`,
-  `${github_pages}help_points.md`,
-  `${github_pages}index.md`,
-  `${github_pages}links.md`,
-  `${github_pages}privacy_areas.md`,
-  `${github_pages}sandbox_rules.md`,
+    `${github_pages}contact_us.md`,
+    `${github_pages}general_information.md`,
+    `${github_pages}help_points.md`,
+    `${github_pages}index.md`,
+    `${github_pages}links.md`,
+    `${github_pages}privacy_areas.md`,
+    `${github_pages}sandbox_rules.md`,
+
+    `${sl_profile_pics}nikcara.hellershanks/${sl_profile_pic_thumbnail}`,
+    `${sl_profile_pics}samuri.zabelin/${sl_profile_pic_thumbnail}`,
+    `${sl_profile_pics}tbg.renfold/${sl_profile_pic_thumbnail}`,
+    `${sl_profile_pics}theo.redgrave/${sl_profile_pic_thumbnail}`,
+    `${sl_profile_pics}lazy.spectre/${sl_profile_pic_thumbnail}`,
+    `${sl_profile_pics}silver.maesar/${sl_profile_pic_thumbnail}`,
+    `${sl_profile_pics}wallii/${sl_profile_pic_thumbnail}`
 ];
 
 async function onInstall(event) {
@@ -65,4 +75,4 @@ async function onFetch(event) {
 
     return cachedResponse || fetch(event.request);
 }
-/* Manifest version: AkmZVg3d */
+/* Manifest version: yXz32g8k */

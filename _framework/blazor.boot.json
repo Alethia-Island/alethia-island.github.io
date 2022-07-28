@@ -7,10 +7,10 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "AlethiaIsland.dll": "sha256-8ey2AfUvZJY4bhnXVAsstQ3KKULQZNXxWchf73Dqof4=",
+      "AlethiaIsland.dll": "sha256-3b1cVs3Zmqmn\/TdDnMfnhXWlhOgL6PhPwPnyLvQkkQM=",
       "CommonMark.dll": "sha256-Le1UPAI0W+wPISH+M5MehPMDO1sVvsAj2tKjiPaC\/Ok=",
       "Microsoft.AspNetCore.Components.dll": "sha256-mpTzi9bge6C8Ecp1BStIKHfeMqiHNXRufgC\/3EU6CWs=",
-      "Microsoft.AspNetCore.Components.Web.dll": "sha256-7rWlOxqw6SUdWk7QWOfXr5FF+Y7DaGSN1vEHFvdbIPw=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-+aUmKoyCkk5SHScIzGXpWPsC16oghi0itXkQhfykN3Y=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-GYLOrHTUilnmo\/diG\/ALfbWMvuvOGZ9MINsKLWtPjFc=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-zhFtW4kE16TdrpPne9I1Cu9o0KYzrS50VE9MVSifJg4=",
       "Microsoft.Extensions.Configuration.dll": "sha256-QPR+1IXNcA28b\/gXw3uZ8aRigHIZUJ1KWSH02kkCg7Q=",
