@@ -15,14 +15,16 @@ const github_pages = 'https://raw.githubusercontent.com/Alethia-Island/WebLinks/
 const filesToCache = [
     `${github_images}backgrounds/river_and_stones.png`,
     `${github_images}help-point-sign.jpg`,
-    `${github_images}unpacking-areas.jpg`,
     `${github_images}icons/icon-512.png`,
+    `${github_images}object-return.jpg`,
+    `${github_images}unpacking-areas.jpg`,
 
     `${github_pages}contact_us.md`,
     `${github_pages}general_information.md`,
     `${github_pages}help_points.md`,
     `${github_pages}index.md`,
     `${github_pages}links.md`,
+    `${github_pages}object-return-service.md`,
     `${github_pages}privacy_areas.md`,
     `${github_pages}sandbox_rules.md`
 ];
