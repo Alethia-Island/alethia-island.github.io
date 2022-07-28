@@ -5,6 +5,9 @@ self.addEventListener('fetch', () => { });
 
 const github_images = 'https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/';
 const github_pages = 'https://raw.githubusercontent.com/Alethia-Island/WebLinks/main/';
+const sl_profile_pics = 'https://my-secondlife-agni.akamaized.net/users/';
+const sl_profile_pic_thumbnail = 'thumb_sl_image.png';
+
 
 const filesToCache = [
     `${github_images}backgrounds/river_and_stones.png`,
@@ -21,7 +24,7 @@ const filesToCache = [
     `${github_pages}sandbox_rules.md`,
 ];
 
-const cacheName = 'github';
+const cacheName = 'app_cache';
 
 self.addEventListener('install', function (e) {
     e.waitUntil(

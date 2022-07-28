@@ -1,70 +1,97 @@
-.page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.bg-img {
+    background-image: url("https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/backgrounds/river_and_stones.png");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    line-height: 25px;
+    width: 100%;
+}
+
+    ::deep.navbar a {
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+.container {
+    background-color: rgb(0, 0, 0, 0.25);
+    border-radius: 4px;
+    max-width: 50em;
+    z-index: 10;
+    width: 100%;
+}
+
+.hdr-l {
+    width: 25%;
+}
+
+.hdr-r {
+    width: 75%;
+}
+
+.hdr-f {
+    font-size: 18px;
 }
 
 main {
     flex: 1;
 }
 
-.sidebar {
-    background-color: #095994;
-}
-
-.top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-    .top-row ::deep a, .top-row .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
-
-    .top-row a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
 @media (max-width: 640.98px) {
-    .top-row:not(.auth) {
-        display: none;
+    .navbar {
+        background-color: rgb(0, 0, 0, 0.5);
     }
-
-    .top-row.auth {
-        justify-content: space-between;
+    .hdr-f {
+        font-size: 15px;
     }
+    main { 
+        padding-top: 5rem;
+    }
+}
 
-    .top-row a, .top-row .btn-link {
-        margin-left: 0;
+@media (max-width: 400px) {
+    .hdr-f {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 443px) {
+    .hdr-f {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hdr-l img {
+        max-height: 16px;
+        max-width: 16px;
+    }
+    .hdr-f {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 280px) {
+    .hdr-l img {
+        max-height: 12px;
+        max-width: 12px;
+    }
+    .hdr-f {
+        font-size: 6px;
     }
 }
 
 @media (min-width: 641px) {
-    .page {
-        flex-direction: row;
-    }
 
-    .sidebar {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .main > div {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
 }
