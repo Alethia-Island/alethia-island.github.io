@@ -245,7 +245,7 @@
       "url": "_framework\/System.Text.RegularExpressions.dll"
     },
     {
-      "hash": "sha256-MXSSOVXHZJeCSR2A66a0DRXwqMiJjnubJJs25EMPD6c=",
+      "hash": "sha256-PFOG7SANxgnyEW4jk+oiRNP82RuMtKHK76GIlOf+izY=",
       "url": "AlethiaIsland.styles.css"
     },
     {
@@ -255,10 +255,6 @@
     {
       "hash": "sha256-Dk5bZaTOLImJMfh83FYvYnr+XhnBCKb4pNoD+RfkRuQ=",
       "url": ".gitignore"
-    },
-    {
-      "hash": "sha256-E3hs\/X\/gv1nWurkJaxkrqDXLcRb3NCGVd\/0bw3XfwYc=",
-      "url": "404.html"
     },
     {
       "hash": "sha256-XmfgHY0wzDaIqmzDL\/fvbE4z3FkFL3iklR1Q94KxIZk=",
@@ -8685,5 +8681,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "yXz32g8k"
+  "version": "PRstNQGu"
 };
