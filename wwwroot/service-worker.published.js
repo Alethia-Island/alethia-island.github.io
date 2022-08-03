@@ -26,7 +26,8 @@ const filesToCache = [
     `${github_pages}links.md`,
     `${github_pages}object-return-service.md`,
     `${github_pages}privacy_areas.md`,
-    `${github_pages}sandbox_rules.md`
+    `${github_pages}sandbox_rules.md`,
+    `${github_pages}script-limits.md`
 ];
 
 async function onInstall(event) {
