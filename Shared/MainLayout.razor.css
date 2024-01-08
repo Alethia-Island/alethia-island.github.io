@@ -11,6 +11,7 @@
     z-index: -1;
 }
 .navbar {
+    background-color: rgb(0, 0, 0, 0.5);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -25,7 +26,7 @@
     }
 
 .container {
-    background-color: rgb(0, 0, 0, 0.25);
+    background-color: rgb(0, 0, 0, 0.6);
     border-radius: 4px;
     max-width: 50em;
     z-index: 10;
@@ -49,9 +50,9 @@ main {
 }
 
 @media (max-width: 640.98px) {
-    .navbar {
+/*    .navbar {
         background-color: rgb(0, 0, 0, 0.5);
-    }
+    }*/
     .hdr-f {
         font-size: 15px;
     }
