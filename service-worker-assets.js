@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Z8bbouZQ1vDLChQaRRwyRuT2xaYETmkLAppnIExJiF0=",
+      "hash": "sha256-qSnZ6OGmixilnY99YzILTnp1\/iZgYMuX5PWO5QYfEsM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-QrLau3o\/cxz4CJ3ntCmhTij3ALlnZPUyZYOHQuseQI4=",
+      "hash": "sha256-FnhIsexoUM4YSxBf9DVnbSV7xGTSuSOJ7\/O58cqmU1M=",
       "url": "_framework\/AlethiaIsland.wasm"
     },
     {
@@ -257,7 +257,7 @@
       "url": "_framework\/System.Xml.Linq.wasm"
     },
     {
-      "hash": "sha256-PFOG7SANxgnyEW4jk+oiRNP82RuMtKHK76GIlOf+izY=",
+      "hash": "sha256-jip\/xmvBI4VznpnOr61oRVuMI7xYSe8XYlniReugLGg=",
       "url": "AlethiaIsland.styles.css"
     },
     {
@@ -8693,5 +8693,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "imByOq\/M"
+  "version": "5GtcBCd\/"
 };
