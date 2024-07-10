@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-kVDwiHo+F987S89aM2\/3XAp3S5gfUzEpAn2ajTlhVV4=",
+      "hash": "sha256-PqJahC31VTylfKaVfHBrm30h87QNmSBdKdf6tt1hkrU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-jdtCi5OD2eaprGw8Zt2l4taGWEZ2pHpDeBqKBHgeuiU=",
+      "hash": "sha256-6x2Mh\/BoY6mWjKKM0jbZCRsejwA4VEyp6ovxfBBdUWc=",
       "url": "_framework\/AlethiaIsland.wasm"
     },
     {
@@ -273,7 +273,7 @@
       "url": ".gitignore"
     },
     {
-      "hash": "sha256-R22mj6KsL8+Ct2XzQO0qusNb84uSSJnoVf5TdC4tCTY=",
+      "hash": "sha256-hg10yoBfrDbAng5\/V4dFU68HHWqz5B3jKEKHsMUqjyk=",
       "url": "css\/app.css"
     },
     {
@@ -8697,5 +8697,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "fRtPCnGE"
+  "version": "cfoa9KgP"
 };
