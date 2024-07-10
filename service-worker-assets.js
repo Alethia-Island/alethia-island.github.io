@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-0ONzMtilG5qjXgAMwhkxOo\/zT3o68msbwRS4NDheeKQ=",
+      "hash": "sha256-Zz4E7q2n7gS\/2V1qhhS6qU8SJEIFJ\/wB9dngagewhSE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-s1cuiH6lRRTvm05H4e2QQQU\/XXzQ0PYsg7UDNihrK2c=",
+      "hash": "sha256-6gtBvISyUTXXTpZXbFOhXLZhPbfp+oGZ\/9Rm5ni7Jxo=",
       "url": "_framework\/AlethiaIsland.wasm"
     },
     {
@@ -225,7 +225,7 @@
       "url": "_framework\/System.Runtime.Serialization.Primitives.wasm"
     },
     {
-      "hash": "sha256-xPNwTG\/842Pf9m8G15f3wmxiUXmTQCffWiQO\/+fQX+0=",
+      "hash": "sha256-eYwtriQh70CfGgicNs\/fHczVC2eAobpIdHpIJKdFDvo=",
       "url": "_framework\/System.Runtime.wasm"
     },
     {
@@ -253,11 +253,15 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm"
     },
     {
+      "hash": "sha256-LB7jgWcCXLlLzm8MDqhra+CcVLgkxyR7PWKAdbVpftM=",
+      "url": "_framework\/System.Threading.wasm"
+    },
+    {
       "hash": "sha256-\/l9xhzzlsx5QEZu0+CRvh38B0upd1yGgiazpJQ4jaco=",
       "url": "_framework\/System.Xml.Linq.wasm"
     },
     {
-      "hash": "sha256-jip\/xmvBI4VznpnOr61oRVuMI7xYSe8XYlniReugLGg=",
+      "hash": "sha256-qpodcpnOFZWqe0f5CzaubjyOmcBiU1XgZepjqSosiV0=",
       "url": "AlethiaIsland.styles.css"
     },
     {
@@ -269,7 +273,7 @@
       "url": ".gitignore"
     },
     {
-      "hash": "sha256-XmfgHY0wzDaIqmzDL\/fvbE4z3FkFL3iklR1Q94KxIZk=",
+      "hash": "sha256-lC971bhVGYbsEk8Zrbaqtyv+5Nvnd6acx19\/UUp93lI=",
       "url": "css\/app.css"
     },
     {
@@ -8665,7 +8669,7 @@
       "url": "css\/fontawesome\/webfonts\/fa-v4compatibility.woff2"
     },
     {
-      "hash": "sha256-Ad77PMKSm7nWu0XCyh+7fGzLNzOa7w8WRKRxzZgn80M=",
+      "hash": "sha256-8cjkwozKthFVnc27aCXulPK7WgcsmOeVjzFwJxw9xu4=",
       "url": "css\/scrollbar-dark.min.css"
     },
     {
@@ -8685,13 +8689,13 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-Hq942QILXmobqza1kP975+VEzASoDudjhRPBi43cjes=",
+      "hash": "sha256-YJXUUQGwpRGg\/\/TiAKvE5feyFJ2\/xgvBBBzTC++ptm0=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-fz+T0Na7qNCZy\/P6VoHwCL9RISClR\/2vijOz5D5WkGY=",
+      "hash": "sha256-GDWIREe84\/vWJRBdcTVtUuyYvx5WPuX1asCy6ZhwGUA=",
       "url": "manifest.json"
     }
   ],
-  "version": "N5stC4xi"
+  "version": "N5a2SXgr"
 };

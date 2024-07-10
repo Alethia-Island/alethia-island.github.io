@@ -5,8 +5,8 @@
   "description": "Alethia Island in Second Life",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#095994",
+  "background_color": "#343a40",
+  "theme_color": "#343a40",
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/icons/icon-512.png",
