@@ -9,7 +9,7 @@
                 <img class="rounded-circle shadow" src="https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/icons/icon-512.png" style="height: 48px; width: 48px;">
             </div>
             <div class="col-1" style="width: 45px;">
-                <h1 class="link shadow" @onclick="@(() => GoBack())"><i class="fa-solid fa-arrow-left"></i></h1>
+                <h1 class="link shadow" @onclick="@(() => GoBack())" title="Go back to the previous page."><i class="fa-solid fa-arrow-left"></i></h1>
             </div>
             <div class="col">
                 <h1 class="ms-2 shadow">
@@ -33,28 +33,28 @@
     <footer class="text-center">
         <ul class="w-100 menu d-block text-center mb-2 fs-4">
             <li class="text-center">
-                <NavLink href="" Match="NavLinkMatch.All">
+                <NavLink href="" Match="NavLinkMatch.All" title="Home.">
                     <i class="fa-solid fa-house"></i>
                 </NavLink>
             </li>
             <li class="text-center">
-                <NavLink href="general">
+                <NavLink href="general" title="General Information.">
                     <i class="fa-solid fa-info-circle"></i>
                 </NavLink>
             </li>
             <li class="text-center">
-                <NavLink href="sandbox/rules">
+                <NavLink href="sandbox/rules" title="Sandbox Rules.">
                     <i class="fa-solid fa-scroll"></i>
                 </NavLink>
             </li>
             <li class="text-center">
-                <NavLink href="links">
+                <NavLink href="links" title="Links.">
                     <i class="fa-solid fa-link"></i>
                 </NavLink>
 @*                 <div class="small fs-6">Links</div> *@
             </li>
             <li class="text-center">
-                <NavLink href="contact">
+                <NavLink href="contact" title="Contact Us.">
                     <i class="fa-solid fa-address-card"></i>
                 </NavLink>
             </li>
