@@ -1,0 +1,32 @@
+﻿<PageTitle>@Title</PageTitle>
+
+@code {
+
+    [Inject]
+    private AppExtensions? AppExtensions { get; set; }
+
+    [Parameter]
+    public string? Icon { get; set; }
+
+    [Parameter]
+    public string? SubTitle { get; set; }
+
+    [Parameter]
+    public string? Title { get; set; }
+
+    protected override Task OnParametersSetAsync()
+    {
+        AppExtensions?.SetPageTitle(Title, Icon);
+        if (string.IsNullOrWhiteSpace(Title))
+        {
+            Title = "Alethia Island";
+        }
+        else
+        {
+            Title = $"Alethia Island - {Title}";
+        }
+
+        return base.OnParametersSetAsync();
+    }
+
+}

@@ -1,0 +1,198 @@
+/*.bg-img {
+    background-image: url("https://raw.githubusercontent.com/alethia-island/assets/master/images/sandbox/backgrounds/sandbox_dock.jpg");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.navbar {
+    background-color: rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    line-height: 25px;
+    width: 100%;
+}
+
+    ::deep.navbar a {
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+.container {
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 4px;
+    max-width: 50em;
+    z-index: 10;
+    width: 100%;
+}
+
+.hdr-l {
+    width: 25%;
+}
+
+.hdr-r {
+    width: 75%;
+}
+
+.hdr-f {
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+}
+
+@media (max-width: 640.98px) {
+    .navbar {
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+    .hdr-f {
+        font-size: 15px;
+    }
+    main { 
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hdr-f {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 443px) {
+    .hdr-f {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hdr-l img {
+        max-height: 16px;
+        max-width: 16px;
+    }
+    .hdr-f {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 280px) {
+    .hdr-l img {
+        max-height: 12px;
+        max-width: 12px;
+    }
+    .hdr-f {
+        font-size: 6px;
+    }
+}
+
+@media (min-width: 641px) {
+
+}
+*/
+
+article {
+    overflow: hidden;
+    overflow-y: auto;
+    width: 60% !important;
+}
+
+.container {
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 4px;
+    max-width: 50em;
+    z-index: 10;
+/*    width: 100%;*/
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    z-index: 1000;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 60px !important;
+    top: 60px !important;
+    width: 100% !important;
+    line-height: 100% !important;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    header h1 {
+        height: 60px;
+        line-height: 60px;
+    }
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+    footer .menu {
+        list-style: none;
+        line-height: 60px !important;
+    }
+
+        footer .menu li {
+            display: inline-block;
+            height: 60px !important;
+            max-height: 60px !important;
+            width: 60px !important;
+            max-width: 60px !important;
+            line-height: 60px !important;
+        }
+
+        footer .menu a:active {
+            color: #ffffff !important;
+        }
+
+        footer .menu li i {
+            /*color: #ffffff !important;*/
+        }
+
+a > i,
+.link > i {
+    color: #808080 !important;
+}
+
+a:active > i,
+.link:active > i,
+a:hover > i,
+.link:hover > i {
+    color: #ffffff !important;
+    cursor: pointer;
+}
+
+@media (max-width: 640.98px) {
+}
+
+@media (min-width: 641px) {
+}

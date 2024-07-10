@@ -11,7 +11,7 @@ public partial class ScriptLimits
 
     protected override async Task OnInitializedAsync()
     {
-        Output = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/script-limits.md"));
+        Output = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/script-limits.md") ?? "");
         await base.OnInitializedAsync();
     }
 }

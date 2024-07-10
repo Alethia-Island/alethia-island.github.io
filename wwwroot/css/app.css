@@ -2,10 +2,24 @@
 @import url('scrollbar-dark.min.css');
 
 html, body {
+    color: var(--bs-white);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-shadow: 1px .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
     overflow: hidden;
+}
+
+.page-background {
+    background-image: url("https://raw.githubusercontent.com/alethia-island/assets/master/images/sandbox/backgrounds/sandbox_dock.jpg");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
 }
 
 * {
@@ -106,6 +120,13 @@ nav-link {
     left: 50vw;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+}
+
+.centered-h {
+    position: absolute;
+    left: calc(50vw - 30%);
+    /* bring your own prefixes */
+    /*transform: translate(-50%, -50%);*/
 }
 
 .content {
