@@ -1,14 +1,29 @@
-﻿<PageTitle>Alethia Island - @Title</PageTitle>
+﻿<PageTitle>@Title</PageTitle>
 
 <p class="pt-2"><h2><i class="@Icon me-2" aria-hidden="true"></i>@(Title ?? SubTitle)</h2></p>
 
 @code {
     [Parameter]
     public string? Icon { get; set; }
-    
+
     [Parameter]
     public string? SubTitle { get; set; }
 
     [Parameter]
     public string? Title { get; set; }
+
+    protected override Task OnParametersSetAsync()
+    {
+        if (string.IsNullOrWhiteSpace(Title))
+        {
+            Title = "Alethia Island";
+        }
+        else
+        {
+            Title = $"Alethia Island - {Title}";
+        }
+
+        return base.OnParametersSetAsync();
+    }
+
 }

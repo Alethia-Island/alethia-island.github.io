@@ -11,7 +11,7 @@ namespace AlethiaIsland.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            Output = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/links.md"));
+            Output = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/links.md") ?? "");
             await base.OnInitializedAsync();
         }
     }
