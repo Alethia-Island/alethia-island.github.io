@@ -19,6 +19,10 @@ jobs:
       with:
         dotnet-version: 9.0.101
 
+    # Installs wasm-tools
+    - name: Install wasm-tools
+      run: dotnet tool install -g wasm-tools
+
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish AlethiaIsland.csproj -c Release -o release --nologo
