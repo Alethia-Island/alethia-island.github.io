@@ -19,9 +19,9 @@ jobs:
       with:
         dotnet-version: 9.0.101
 
-    # Installs wasm-tools
+    # Installs wasm-tools workload
     - name: Install wasm-tools
-      run: dotnet tool install -g wasm-tools
+      run: dotnet workload install wasm-tools
 
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
