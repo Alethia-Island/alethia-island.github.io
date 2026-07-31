@@ -1,57 +1,58 @@
 name: Deploy to GitHub Pages
 
+# Run workflow on every push to the master branch
 on:
   push:
-    branches: [master]
-  workflow_dispatch:
+    branches: [ master ]
 
+# Needed for the actions/deploy-pages action
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment
 concurrency:
-  group: pages
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7
+    - uses: actions/checkout@v4
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v6
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.303
 
-      - name: Set up .NET 10
-        uses: actions/setup-dotnet@v6
-        with:
-          dotnet-version: 10.0.x
+    - name: Publish .NET Core Project
+      run: dotnet publish AlethiaIsland.csproj -c Release -o release --nologo
 
-      - name: Restore project workloads
-        run: dotnet workload restore AlethiaIsland.csproj
+    # copy index.html to 404.html to serve the same file when a file is not found
+    - name: copy index.html to 404.html
+      run: cp release/wwwroot/index.html release/wwwroot/404.html
 
-      - name: Publish site
-        run: dotnet publish AlethiaIsland.csproj --configuration Release --output release --nologo
+    # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
 
-      - name: Configure static-site fallback
-        run: |
-          cp release/wwwroot/index.html release/wwwroot/404.html
-          touch release/wwwroot/.nojekyll
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: release/wwwroot
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: release/wwwroot
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v5
