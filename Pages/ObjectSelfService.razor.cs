@@ -11,7 +11,7 @@ public partial class ObjectSelfService
 
     protected override async Task OnInitializedAsync()
     {
-        Output = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/object-return-service.md"));
+        Output = new(await Http.GetMarkdownAsHtml($"{AppConfig.LinksRepo}/object_return_service.md"));
         await base.OnInitializedAsync();
     }
 }
