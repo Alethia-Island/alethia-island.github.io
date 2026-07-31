@@ -4,9 +4,9 @@ namespace AlethiaIsland;
 
 public static class HttpClientExtensions
 {
-    public static async Task<string?> GetMarkdownAsHtml(this HttpClient? client, string? uri) => await GetMarkdownAsHtml(client, new Uri(uri ?? string.Empty));
+    public static async Task<string> GetMarkdownAsHtml(this HttpClient? client, string uri) => await GetMarkdownAsHtml(client, new Uri(uri));
 
-    public static async Task<string?> GetMarkdownAsHtml(this HttpClient? client, Uri? uri)
+    public static async Task<string> GetMarkdownAsHtml(this HttpClient? client, Uri uri)
     {
         if (client is not null)
         {
@@ -23,6 +23,6 @@ public static class HttpClientExtensions
                 }
             }
         }
-        return null;
+        return string.Empty;
     }
 }

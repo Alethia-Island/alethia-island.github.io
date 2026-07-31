@@ -7,7 +7,7 @@ namespace AlethiaIsland.Pages
         [Inject]
         private HttpClient? Http { get; set; }
 
-        private MarkupString Output = new();
+        private MarkupString? Output = new();
 
         protected override async Task OnInitializedAsync()
         {

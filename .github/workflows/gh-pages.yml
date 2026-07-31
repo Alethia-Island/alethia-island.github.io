@@ -13,11 +13,15 @@ jobs:
     # uses GitHub's checkout action to checkout code form the master branch
     - uses: actions/checkout@v2
     
-    # sets up .NET Core SDK 6.0
+    # sets up .NET Core SDK 9.0
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 8.0.303
+        dotnet-version: 9.0.101
+
+    # Installs wasm-tools workload
+    - name: Install wasm-tools
+      run: dotnet workload install wasm-tools
 
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
@@ -34,5 +38,5 @@ jobs:
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        BRANCH: gh-pages
-        FOLDER: release/wwwroot
+        branch: gh-pages
+        folder: release/wwwroot
