@@ -3,12 +3,12 @@
 <div class="page-background" />
 
 <div class="page">
-    <header>
-        <div class="row fs-5">
-            <div class="col-1" style="width: 60px;">
-                <img class="rounded-circle shadow" src="https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/icons/icon-512.png" style="height: 48px; width: 48px;">
-            </div>
-            <div class="col-1" style="width: 45px;">
+        <header class="layout-header">
+            <div class="row align-items-center fs-5 g-2">
+                <div class="col-auto">
+                    <img class="layout-logo rounded-circle shadow" src="https://raw.githubusercontent.com/Alethia-Island/assets/master/images/sandbox/icons/icon-512.png" alt="Alethia Island">
+                </div>
+                <div class="col-auto">
                 <h1 class="link shadow" @onclick="@(() => GoBack())" title="Go back to the previous page."><i class="fa-solid fa-arrow-left"></i></h1>
             </div>
             <div class="col">
@@ -25,36 +25,36 @@
             </div>
         </div>
     </header>
-    <main class="">
-        <article class="container shadow-lg p-4 mt-4 mb-4">
+        <main class="layout-main">
+            <article class="container shadow-lg p-4 mt-4 mb-4 layout-content">
             @Body
         </article>
     </main>
-    <footer class="text-center">
+        <footer class="layout-footer text-center">
         <ul class="w-100 menu d-block text-center mb-2 fs-4">
             <li class="text-center">
-                <NavLink href="" Match="NavLinkMatch.All" title="Home.">
+                <NavLink href="" Match="NavLinkMatch.All" title="Home." aria-label="Home">
                     <i class="fa-solid fa-house"></i>
                 </NavLink>
             </li>
             <li class="text-center">
-                <NavLink href="general" title="General Information.">
+                <NavLink href="general" title="General Information." aria-label="General information">
                     <i class="fa-solid fa-info-circle"></i>
                 </NavLink>
             </li>
             <li class="text-center">
-                <NavLink href="sandbox/rules" title="Sandbox Rules.">
+                <NavLink href="sandbox/rules" title="Sandbox Rules." aria-label="Sandbox rules">
                     <i class="fa-solid fa-scroll"></i>
                 </NavLink>
             </li>
             <li class="text-center">
-                <NavLink href="links" title="Links.">
+                <NavLink href="links" title="Links." aria-label="Links">
                     <i class="fa-solid fa-link"></i>
                 </NavLink>
 @*                 <div class="small fs-6">Links</div> *@
             </li>
             <li class="text-center">
-                <NavLink href="contact" title="Contact Us.">
+                <NavLink href="contact" title="Contact Us." aria-label="Contact us">
                     <i class="fa-solid fa-address-card"></i>
                 </NavLink>
             </li>
