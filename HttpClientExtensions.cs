@@ -1,28 +1,19 @@
-﻿using CommonMark;
+using CommonMark;
 
 namespace AlethiaIsland;
 
 public static class HttpClientExtensions
 {
-    public static async Task<string> GetMarkdownAsHtml(this HttpClient? client, string uri) => await GetMarkdownAsHtml(client, new Uri(uri));
+    public static Task<string> GetMarkdownAsHtml(this HttpClient client, string uri, CancellationToken cancellationToken = default) =>
+        GetMarkdownAsHtml(client, new Uri(uri), cancellationToken);
 
-    public static async Task<string> GetMarkdownAsHtml(this HttpClient? client, Uri uri)
+    public static async Task<string> GetMarkdownAsHtml(this HttpClient client, Uri uri, CancellationToken cancellationToken = default)
     {
-        if (client is not null)
-        {
-            HttpResponseMessage? resp = await client.GetAsync(uri);
-            if (resp?.IsSuccessStatusCode is true)
-            {
-                try
-                {
-                    return CommonMarkConverter.Convert(await resp.Content.ReadAsStringAsync());
-                }
-                catch (Exception e)
-                {
-                    await Console.Error.WriteLineAsync(e.Message);
-                }
-            }
-        }
-        return string.Empty;
+        using var response = await client.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
+        if (!response.IsSuccessStatusCode)
+            return string.Empty;
+
+        var markdown = await response.Content.ReadAsStringAsync(cancellationToken);
+        return CommonMarkConverter.Convert(markdown);
     }
 }

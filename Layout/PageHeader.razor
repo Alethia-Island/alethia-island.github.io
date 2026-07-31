@@ -1,32 +1,21 @@
-﻿<PageTitle>@Title</PageTitle>
+<PageTitle>@DocumentTitle</PageTitle>
 
 @code {
+    [Inject] private AppExtensions? AppExtensions { get; set; }
 
-    [Inject]
-    private AppExtensions? AppExtensions { get; set; }
+    [Parameter] public string? Icon { get; set; }
+    [Parameter] public string? SubTitle { get; set; }
+    [Parameter] public string? Title { get; set; }
 
-    [Parameter]
-    public string? Icon { get; set; }
+    private string DocumentTitle => string.IsNullOrWhiteSpace(Title)
+        ? "Alethia Island"
+        : $"Alethia Island - {Title}";
 
-    [Parameter]
-    public string? SubTitle { get; set; }
-
-    [Parameter]
-    public string? Title { get; set; }
-
-    protected override Task OnParametersSetAsync()
+    protected override async Task OnParametersSetAsync()
     {
-        AppExtensions?.SetPageTitle(Title, Icon);
-        if (string.IsNullOrWhiteSpace(Title))
-        {
-            Title = "Alethia Island";
-        }
-        else
-        {
-            Title = $"Alethia Island - {Title}";
-        }
+        if (AppExtensions is not null)
+            await AppExtensions.SetPageTitle(Title, Icon);
 
-        return base.OnParametersSetAsync();
+        await base.OnParametersSetAsync();
     }
-
 }
